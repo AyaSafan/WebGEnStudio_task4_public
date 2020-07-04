@@ -1,0 +1,158 @@
+
+$font-color0: #000000
+$font-color1: #2E174B
+$font-color2: #472158
+$font-color3: #80406F
+$font-color4: #AA586E	
+$font-color5: #D6897F
+$font-color6: #DAA88B
+
+    
+@font-face 
+    font-family: ALDORA-Cutting 
+    src: url("../fonts/ALDORA-Cutting.otf") format('opentype')
+
+
+@font-face 
+    font-family: ALDORA 
+    src: url("../fonts/ALDORA.otf") format('opentype')
+    
+
+html,body
+    height: 100%
+    margin: 0
+    padding-right: 0px !important
+
+#alert
+    height: 0px
+    display: none
+
+.nopadding 
+    padding: 0 !important
+    margin: 0 !important
+
+.row.main
+    min-height: calc( 100vh - 50px )
+
+label
+    margin-bottom: 0px
+
+a
+    text-decoration: none
+    color: $font-color3
+/***********************************************************navbar******************************************/
+@media (min-width: 992px) 
+    .navbar-brand    
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+    
+
+.navbar
+    background-color: $font-color0
+    height: 50px
+
+.navbar-collapse, .navbar-nav
+    background-color: $font-color0
+    padding-left: 10px
+
+.nav-tabs .nav-tab.active .nav-link,
+.nav-tabs .nav-tab:hover .nav-link,
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link,
+.fa, .fas
+    color: $font-color4 !important
+
+
+.navbar-brand
+    font-family: ALDORA-Cutting
+    font-size: x-large
+        
+    
+   
+.nav-link
+    font-family: ALDORA
+    font-size: x-large
+
+.fa, .fas
+    font-size: 30px
+    
+
+/*********************************************************buttons**********************************************/
+.btn-custome, .btn-custome:focus
+    background-color: $font-color1
+    border-color: $font-color5
+    outline: none
+    box-shadow: none !important
+
+  
+.btn-custome:hover, .btn-custome:active
+    background: $font-color4 !important
+    border-color: $font-color4 !important
+    color: $font-color1
+    cursor: pointer
+    outline: none
+    box-shadow: none !important
+
+.btn-custome.btn-user
+    border-color: black !important
+    color: rgba(255,255,255,.5)
+    font-size: x-large
+    padding-top: 2px
+    padding-left: 0px
+    margin-left: 0
+    border-width: 0
+  
+.btn-custome.btn-user:hover
+    background-color: $font-color1 !important
+    color: $font-color6 !important 
+  
+.btn-custome:disabled
+    background-color: #ccc !important
+    border-color: Gray
+    color: Gray !important 
+    cursor: not-allowed
+
+.fa-add
+    color: white !important
+    font-size: 25px
+    vertical-align: middle
+    margin-top: 5px
+
+.btn-dropdown, .btn-dropdown:focus, .btn-dropdown:hover
+    background-color: $font-color0
+    color: white
+    font-family: ALDORA
+    font-size: x-large
+    border-color: $font-color0
+
+.dropdown-item:focus, .dropdown-item:hover
+    cursor: pointer
+    background-color: $font-color5
+
+
+    
+
+/**********************************************************layout_profile **********************************************/
+.background2
+    background: linear-gradient(180deg, $font-color1 0%, $font-color2 25%, $font-color3 53%, $font-color4 69%, $font-color5 88%, $font-color6 96%)
+
+
+.card.intro-card
+    background-color: rgba(235, 217, 198, 0.5)
+    margin-top: 25vh
+    margin-bottom: 25px
+    padding: 40px 20px 20px
+ 
+
+.card-white
+    margin-top: 100px
+    margin-bottom: 100px
+    min-height: 20vh
+    min-width: 100%
+    border-radius: 10px
+    padding: 5%
+    background: white
+
+
+    
